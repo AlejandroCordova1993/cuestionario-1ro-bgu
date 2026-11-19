@@ -143,7 +143,7 @@ const bancoPractica = {
   "passages": {
     "kichwa": {
       "title": "Una comunidad y dos lenguas",
-      "text": "Durante la Colonia, las autoridades españolas dieron prioridad al castellano en los documentos y sustituyeron algunos nombres originarios de lugares. Hoy, en una comunidad ecuatoriana, varias familias hablan kichwa en casa, pero algunas personas evitan usarlo en reuniones por temor a las burlas. Para la feria del colegio, un grupo propone presentar relatos de las familias en kichwa y castellano."
+      "text": "En los documentos de una comunidad, las autoridades coloniales dieron prioridad al castellano y cambiaron algunos nombres originarios de lugares. Esos nombres recordaban hechos de la historia local. Hoy, varias familias de la comunidad cuentan relatos en kichwa en casa. En las reuniones predomina el castellano y algunas personas evitan hablar kichwa por temor a las burlas. Para la feria del colegio, un grupo propone contar los relatos en ambas lenguas."
     }
   },
   "questions": [
@@ -164,7 +164,7 @@ const bancoPractica = {
     },
     {
       "id": 2,
-      "prompt": "Lea cada enunciado y seleccione Verdadero o Falso.",
+      "prompt": "Según la lectura, ¿qué afirmaciones son verdaderas y cuáles son falsas?",
       "original": true,
       "passage": "kichwa",
       "kind": "boolean",
@@ -179,17 +179,17 @@ const bancoPractica = {
           "why": "La lectura indica que las autoridades coloniales dieron prioridad al castellano en los documentos."
         },
         {
-          "prompt": "Usar menos una lengua facilita la transmisión de sus relatos.",
-          "correct": 1,
-          "why": "Usar una lengua en menos situaciones puede reducir las oportunidades de transmitir sus relatos."
-        },
-        {
-          "prompt": "Las burlas pueden reducir el uso del kichwa en público.",
+          "prompt": "Cuando una familia cuenta relatos en kichwa, sus hijos tienen la oportunidad de aprender expresiones de esa lengua.",
           "correct": 0,
-          "why": "El caso muestra que algunas personas evitan hablar kichwa en reuniones por temor a las burlas."
+          "why": "Los hijos pueden oír las expresiones en kichwa y aprender su significado al seguir la historia."
         },
         {
-          "prompt": "Hablar kichwa en casa elimina la desigualdad en espacios públicos.",
+          "prompt": "Las familias del caso evitan el kichwa en las reuniones porque han dejado de hablarlo en casa.",
+          "correct": 1,
+          "why": "Las familias siguen usando el kichwa en casa. En las reuniones, algunas personas lo evitan por temor a las burlas."
+        },
+        {
+          "prompt": "Como las familias hablan kichwa en casa, también pueden usarlo en las reuniones sin temor a las burlas.",
           "correct": 1,
           "why": "El uso familiar puede coexistir con la desigualdad en espacios públicos."
         }
@@ -198,12 +198,12 @@ const bancoPractica = {
     },
     {
       "id": 3,
-      "prompt": "Seleccione la acción del colegio que ampliaría el uso cotidiano del kichwa.",
+      "prompt": "Seleccione la acción que daría a los estudiantes oportunidades frecuentes de conversar en kichwa en el colegio.",
       "original": true,
       "passage": "kichwa",
       "kind": "choice",
       "options": [
-        "Organizar un club de conversación en kichwa para practicarlo fuera de casa.",
+        "Organizar un club semanal en el que los estudiantes conversen en kichwa.",
         "Difundir solo las traducciones al castellano de los relatos.",
         "Guardar grabaciones en kichwa sin usarlas en actividades del colegio."
       ],
@@ -213,13 +213,13 @@ const bancoPractica = {
     },
     {
       "id": 4,
-      "prompt": "¿Qué situación muestra un trato más equitativo entre dos lenguas?",
+      "prompt": "En una comunidad se hablan kichwa y castellano. ¿Cómo puede la asamblea dar a los hablantes de ambas lenguas la misma oportunidad de participar en el debate?",
       "original": false,
       "kind": "choice",
       "options": [
-        "En la asamblea se aceptan intervenciones en ambas lenguas y se ofrece interpretación.",
-        "La asamblea se anuncia en dos lenguas, pero todas las intervenciones deben hacerse en castellano.",
-        "La asamblea permite el kichwa únicamente en la ceremonia de apertura."
+        "Aceptar intervenciones en cualquiera de las dos lenguas y traducirlas para quienes lo necesiten.",
+        "Anunciar la reunión en ambas lenguas y pedir que todas las intervenciones se hagan en castellano.",
+        "Dar la bienvenida en kichwa y reservar el debate para las intervenciones en castellano."
       ],
       "correct": 0,
       "hint": "Observa qué puede hacer una persona durante la asamblea si prefiere hablar en kichwa.",
@@ -242,31 +242,31 @@ const bancoPractica = {
     },
     {
       "id": 6,
-      "prompt": "¿Qué consecuencia puede tener que los jóvenes escuchen cada vez menos relatos en kichwa?",
+      "prompt": "Cada domingo, una familia sigue contando las mismas historias a sus hijos. Antes las contaba en kichwa y ahora las cuenta en castellano. ¿Qué oportunidad han perdido los hijos en esos encuentros?",
       "original": false,
       "kind": "choice",
       "options": [
-        "Los relatos adquieren automáticamente mayor presencia en espacios públicos.",
-        "Los jóvenes tienen menos oportunidades de aprender palabras y expresiones en kichwa.",
-        "Las familias sustituyen necesariamente todos sus relatos por historias nuevas."
+        "Conocer lo que les sucede a los personajes de las historias.",
+        "Aprender palabras y expresiones en kichwa al escuchar las historias.",
+        "Reunirse los domingos a escuchar relatos de su familia."
       ],
       "correct": 1,
-      "hint": "Piensa en lo que se aprende al escuchar relatos en la lengua en que se cuentan.",
-      "why": "Al escuchar relatos en kichwa con menor frecuencia, los jóvenes tienen menos oportunidades de aprender su vocabulario y sus formas de expresión."
+      "hint": "Fíjate en qué cambió durante el encuentro familiar. ¿Cambiaron las historias, el día o la lengua en que se cuentan?",
+      "why": "La familia conserva los relatos y la reunión del domingo. Al escucharlos en castellano, los hijos ya no oyen en ese encuentro las palabras y expresiones de la versión en kichwa."
     },
     {
       "id": 7,
-      "prompt": "¿Qué situación ejemplifica el uso de dos lenguas con reconocimiento similar?",
+      "prompt": "¿En cuál de estos espacios se da al kichwa y al castellano un lugar equivalente para comunicar información al público?",
       "original": false,
       "kind": "choice",
       "options": [
         "Una familia habla kichwa en casa y evita usarlo fuera por temor a las burlas.",
         "Un centro de salud exige hacer todas las consultas en castellano.",
-        "Una radio comunitaria transmite noticias en kichwa y castellano con la misma frecuencia."
+        "Una radio comunitaria emite el mismo noticiero en kichwa y en castellano, con igual tiempo para cada versión."
       ],
       "correct": 2,
       "hint": "Busca el medio en el que las dos lenguas tienen una presencia pública comparable.",
-      "why": "La radio asigna a ambas lenguas una presencia pública similar en su programación informativa. Los otros casos restringen el uso del kichwa a determinados espacios."
+      "why": "En esa radio, ambas lenguas sirven para informar sobre las mismas noticias y reciben el mismo tiempo al aire. Eso permite comparar el lugar que se les da dentro del noticiero."
     },
     {
       "id": 8,
@@ -312,17 +312,18 @@ const bancoPractica = {
     },
     {
       "id": 11,
-      "prompt": "Ya tienes una lista de ideas para un texto sobre el ruido en el aula. ¿Cómo las organizarías antes de redactar?",
+      "prompt": "Anotaste tres ideas sobre el ruido en el aula. ¿Cómo las organizarías para explicar el problema y proponer una solución?",
+      "context": "Las sillas hacen ruido al arrastrarse. Con ese ruido cuesta oír las instrucciones. Poner almohadillas en las patas de las sillas ayudaría a moverlas en silencio.",
       "original": false,
       "kind": "choice",
       "options": [
-        "Agruparlas en causas, consecuencias y posibles soluciones.",
-        "Conservar el orden en que aparecieron, incluso si varias tratan del mismo asunto.",
-        "Elegir las dos ideas más largas y redactar un párrafo con cada una."
+        "Agruparlas según qué causa el ruido, qué efecto tiene y cómo se podría reducir.",
+        "Ordenarlas según el elemento que mencionan, primero los objetos y luego las personas.",
+        "Agruparlas según cuántas palabras se necesitan para explicar cada idea."
       ],
       "correct": 0,
       "hint": "Busca el orden que te permita explicar el problema y plantear una respuesta.",
-      "why": "Agrupar en causas, consecuencias y posibles soluciones da una función a cada conjunto de ideas y ayuda a organizar los párrafos."
+      "why": "Arrastrar las sillas es la causa del ruido. La dificultad para oír es una consecuencia. Poner almohadillas es una posible solución."
     },
     {
       "id": 12,
@@ -397,17 +398,17 @@ const bancoPractica = {
     },
     {
       "id": 17,
-      "prompt": "¿Qué aviso cumple una función apelativa e invita a participar en la campaña de lectura desde mañana?",
+      "prompt": "Hoy es martes y la campaña de lectura empieza mañana, miércoles. ¿Qué aviso invita directamente a participar el día de la apertura?",
       "original": false,
       "kind": "choice",
       "options": [
-        "La campaña de lectura comenzará mañana en el colegio.",
-        "¡Participa en la campaña de lectura desde mañana!",
-        "¡Participa en la campaña de lectura desde la próxima semana!"
+        "La campaña de lectura empieza este miércoles en el colegio.",
+        "¡Ven este miércoles a participar en la campaña de lectura!",
+        "¡Ven este jueves a participar en la campaña de lectura!"
       ],
       "correct": 1,
-      "hint": "Busca una invitación directa que conserve el día de inicio.",
-      "why": "El imperativo «participa» se dirige al lector para invitarlo a actuar. «Desde mañana» conserva el momento en que comienza la campaña."
+      "hint": "Revisa dos cosas. ¿El aviso le pide algo al lector? ¿Lo invita para el día en que empieza la campaña?",
+      "why": "«Ven» se dirige al lector y lo invita a actuar. El miércoles es el día de la apertura. El aviso del jueves también invita, pero para otro día."
     },
     {
       "id": 18,
@@ -448,9 +449,9 @@ const bancoPractica = {
     },
     {
       "id": 20,
-      "prompt": "¿Por qué se contradicen las dos afirmaciones del aviso?",
+      "prompt": "El curso recibe estos dos mensajes sobre la visita al museo. ¿Por qué se contradicen?",
       "original": false,
-      "context": "«La misma actividad, en la misma fecha y para el mismo grupo, es obligatoria para todos los estudiantes. La participación en esa actividad es opcional para todos los estudiantes».",
+      "context": "«Todo el curso debe asistir a la visita al museo de este viernes». «Cada estudiante del curso puede decidir si asiste a la visita al museo de este viernes».",
       "kind": "choice",
       "options": [
         "Presentan la participación en la misma actividad y para el mismo grupo como obligatoria y opcional a la vez.",
@@ -488,14 +489,14 @@ const bancoPractica = {
       ],
       "parts": [
         {
-          "prompt": "«Este pegamento es el más resistente porque lo asegura un campeón de ajedrez»",
+          "prompt": "«El campeón de ajedrez reconoce que no sabe de pegamentos. Aun así, este debe ser el más resistente porque él lo recomienda»",
           "correct": 2,
-          "why": "La experiencia del campeón de ajedrez no respalda la resistencia del pegamento."
+          "why": "El argumento se apoya en el prestigio del campeón de ajedrez. Su título no aporta pruebas sobre la resistencia de un pegamento."
         },
         {
-          "prompt": "«Dos carteles de esa feria tenían errores. Todos los carteles de la feria están mal hechos»",
+          "prompt": "«En la feria había cuarenta carteles. Revisé dos y ambos tenían errores. Por eso afirmo que los cuarenta tienen errores»",
           "correct": 3,
-          "why": "La conclusión se extiende a todos los carteles a partir de dos casos."
+          "why": "Se atribuye a los cuarenta carteles lo observado en solo dos, sin comprobar los otros treinta y ocho."
         },
         {
           "prompt": "«No tomen en cuenta la propuesta de Irene. Ella es muy desordenada»",
@@ -517,19 +518,19 @@ const bancoPractica = {
       "context": "«Nadie ha demostrado que esta aplicación pierda los datos. Por eso, es imposible que los pierda».",
       "kind": "choice",
       "options": [
-        "Extrapola el resultado de una sola prueba a todos los usos de la aplicación.",
-        "Toma la falta de pruebas de que la aplicación falle como prueba de que nunca fallará.",
+        "Supone que el resultado de una sola prueba con la aplicación vale para todos los casos.",
+        "Da por imposible que se pierdan datos porque nadie ha demostrado que eso ocurra.",
         "Confunde la cantidad de personas que usan la aplicación con la calidad de su funcionamiento."
       ],
       "correct": 1,
-      "hint": "Distingue entre desconocer si puede fallar y haber comprobado que funciona en todas las condiciones.",
-      "why": "El argumento incurre en una apelación a la ignorancia. La falta de pruebas de que ocurra un fallo, por sí sola, no demuestra que sea imposible."
+      "hint": "Fíjate en la diferencia entre «nadie ha demostrado que ocurra» y «es imposible que ocurra».",
+      "why": "Que nadie haya demostrado una pérdida de datos no prueba que sea imposible perderlos. Sacar esa conclusión es una apelación a la ignorancia."
     },
     {
       "id": 24,
       "prompt": "Lea el caso y seleccione una respuesta en cada apartado.",
       "original": true,
-      "context": "En el chat del curso circula un anuncio sobre la apertura de la biblioteca del barrio los domingos. Un estudiante dice: «Casi todos lo compartieron, así que debe ser cierto».",
+      "context": "En el chat del curso circula un mensaje que anuncia que la biblioteca del barrio abrirá los domingos a partir de este mes. Un estudiante afirma que el anuncio debe ser cierto porque casi todo el curso lo ha compartido.",
       "kind": "parts",
       "parts": [
         {
@@ -545,7 +546,7 @@ const bancoPractica = {
         {
           "prompt": "Seleccione la fuente que permite comprobar el horario.",
           "options": [
-            "El horario publicado por la biblioteca.",
+            "El horario vigente publicado por la propia biblioteca.",
             "La cantidad de veces que se compartió.",
             "El comentario más votado del chat."
           ],
@@ -602,17 +603,17 @@ const bancoPractica = {
     },
     {
       "id": 28,
-      "prompt": "¿Qué dato permitiría evaluar mejor la afirmación «Dos alumnos se atrasaron hoy. Todos los estudiantes de ese curso llegan tarde»?",
+      "prompt": "Hoy dos estudiantes llegaron tarde. Un compañero concluye que todos los estudiantes del curso suelen llegar tarde. ¿Qué información permitiría comprobar esa conclusión?",
       "original": false,
       "kind": "choice",
       "options": [
         "Los comentarios de los compañeros sobre esos dos alumnos.",
-        "Los registros de asistencia de todo el curso durante varias semanas.",
+        "La hora de entrada fijada por el colegio y la hora de llegada de cada estudiante del curso durante varias semanas.",
         "El número de personas que reenviaron el mensaje."
       ],
       "correct": 1,
       "hint": "La afirmación habla de todo el curso y de una conducta habitual. ¿Qué fuente cubre ambas cosas?",
-      "why": "Los registros de todo el curso durante varias semanas permiten evaluar un patrón. Dos casos de un solo día no sostienen por sí solos la conclusión general."
+      "why": "Comparar la hora de llegada con la hora de entrada permite identificar un atraso. Hacerlo para cada estudiante durante varias semanas permite ver si ocurre con frecuencia en todo el curso."
     },
     {
       "id": 29,
